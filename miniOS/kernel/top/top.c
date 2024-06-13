@@ -64,7 +64,7 @@ void print_column_headers(int startCol, int endCol, int col, int *startX, int *c
             attron(A_REVERSE);
         }
 
-        // Print the text for each column
+        // Print the text for each column..
         switch (i) {
             case PID_IDX:
                 mvprintw(COLUMN_ROW, startX[PID_IDX], "%*s", columnWidth[PID_IDX], PID_STR);
