@@ -509,10 +509,13 @@ void top(void) {
                 if(col == 0){
                     if(by_cpu==false){
                         by_cpu = true;
-                        print = true;}
-                    if(by_cpu==true){
+                        print = true;
+                    }
+                    else if(by_cpu==true){
                         by_cpu = false;
-                        print = true;}
+                        print = true;
+                    }
+                    }
                 if(col == 7)
                     roundRobinScheduling();
                 break;
