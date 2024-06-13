@@ -96,3 +96,4 @@ extern void erase_proc(myProc* proc);
 #define COMMAND_STR "COMMAND"
 #define COLUMN_ROW 6			//column 출력할 행
 #define TAB_WIDTH 8
+#define STAT_STATE_IDX 2

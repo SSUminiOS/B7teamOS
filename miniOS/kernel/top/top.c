@@ -426,7 +426,7 @@ void print_top(void) {
 
         if (startCol <= S_IDX && S_IDX < endCol) {
             gap = columnWidth[S_IDX] - strlen(sorted[i]->stat);
-            mvprintw(COLUMN_ROW + 1 + i - row, startX[S_IDX], "%s", token);
+            mvprintw(COLUMN_ROW + 1 + i - row, startX[S_IDX]+gap, "%s", sorted[i]->stat);
         }
 
         if (startCol <= CPU_IDX && CPU_IDX < endCol) {
