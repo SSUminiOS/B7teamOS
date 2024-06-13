@@ -507,7 +507,10 @@ void top(void) {
             case '\n': // Enter key
             case KEY_ENTER:
                 if(col == 0){
-                    by_cpu = !by_cpu;
+                    if(by_cpu==false)
+                        by_cpu = true;
+                    if(by_cpu==true)
+                        by_cpu = false;
                     print = true;}
                 if(col == 7)
                     roundRobinScheduling();
