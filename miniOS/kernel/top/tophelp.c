@@ -223,7 +223,7 @@ void add_proc_list(char path[1024], unsigned long cpuTimeTable[8192]) {
 
     // command 획득
     sscanf(statToken[1], "(%s", proc.cmd); // cmd 획득
-    proc.cmd[strlen(proc.cmd) - 1] = '\0'; // 마지막 ')' 제거
+    proc.cmd[strlen(proc.cmd) - 1] = '\0'; // 마지막 ')' 제거..
 
     // procList에 정보 저장
     procList[procCnt] = proc;

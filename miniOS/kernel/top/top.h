@@ -1,5 +1,5 @@
 /*  ***********************Include source**************************/
-// include 이유와 사용부분, 이름을 꼭 ! 기입해주세요.
+// include 이유와 사용부분, 이름을 꼭 ! 기입해주세요...
 #include <stdio.h>
 #include <string.h> // str을 읽어오기 위해 include 2행 - 지수
 #include <stdlib.h>
