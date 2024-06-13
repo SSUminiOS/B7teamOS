@@ -201,6 +201,9 @@ void add_proc_list(char path[1024], unsigned long cpuTimeTable[8192]) {
     // priority 및 nice 값 획득
     proc.priority = atoi(statToken[17]);
     proc.nice = atoi(statToken[18]);
+    
+    //basic state
+    strcpy(proc.stat, statToken[STAT_STATE_IDX]);
 
     // START 획득
     time_t start = time(NULL) - uptime + (startTime / Hertz);
